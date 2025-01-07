@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'MaPolice'; /* Nom de la police que vous définissez */
+    src: url('./fonts/vegur-bold 0310.otf') format('opentype'); /* Format OpenType */
+    font-weight: normal; /* Style normal */
+    font-style: normal;  /* Pas d'italique */
+}
+@font-face {
+    font-family: 'MaPoliceNorm'; /* Nom de la police que vous définissez */
+    src: url('./fonts/vegur-regular 0333.otf') format('opentype'); /* Format OpenType */
+    font-weight: normal; /* Style normal */
+    font-style: normal;  /* Pas d'italique */
+}
+
+#main {
+    background-color: yellowgreen;
+    /* position: relative;
+    z-index: 0; */
+    border-radius: 50px;
+    height: 80vh;
+    width: 100%;
+}
+#bg{
+    border-radius: inherit;
+    height: inherit;
+    width: inherit;
+}
+p{
+    font-family: 'MaPoliceNorm';
+    /* font-weight: 900; */
+}
+/* 
+#airplane {
+    position: absolute;
+    top: -10%;
+    height: 100%;
+    width: 100%;
+    right: -43%;
+    z-index: 100;
+}
+#bg {
+    position: absolute;
+    z-index: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}*/
+
+#first {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    flex-direction: column;
+    position: relative;
+    /* z-index: 300; */
+ }
+ /*
+#second {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#huncho h1 {
+    font-size: 65px;
+}*/
+.circle {
+    background-color: #999;
+    color: #fff;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px #fff solid;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.circle.active {
+    background-color: #fff;
+    color: #999;
+    transition: 0.4s ease;
+}
+.progress {
+    background-color: #999;
+    position: absolute;
+    right: 43.98%;
+    height: 100%;
+    width: 4px;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+#binks {
+    background-color: #3483fd;
+    color: #ffff;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 30px;
+}
+
+.roul{
+    /* border-top-left-radius: 8990px; */
+    padding-top: 15px;
+    /* height: 300px; */
+}
+#test{
+    height: 130%;
+}
+.rowli{
+    border-top-right-radius: 999px;
+    border-top-left-radius: 999px;
+}
+.mapol{
+    font-family: 'MaPolice';
+}
