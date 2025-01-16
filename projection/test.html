@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
-    <title>Document</title>
+    <title>Responsive Design</title>
 </head>
-<body>
-    <div class="rounded-full h-96 w-96 bg-red-500 flex justify-center items-center">
-        <div class="rounded-full h-1/2 w-1/2 bg-red-600"></div>
+<body class="overflow-x-cli">
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
     </div>
+    
+    <style>
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row:3 ;
+        grid-template-rows: 2fr auto auto;
+        gap: 10px;
+    }
+    div{
+        border: 1px blue solid;
+    }
+    </style>
 </body>
 </html>
